@@ -21,6 +21,10 @@
 		5D9A9878262B563200DE9BDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D9A9876262B563200DE9BDC /* LaunchScreen.storyboard */; };
 		5D9A9883262B563200DE9BDC /* PatternsTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9A9882262B563200DE9BDC /* PatternsTestTests.swift */; };
 		5D9A988E262B563200DE9BDC /* PatternsTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9A988D262B563200DE9BDC /* PatternsTestUITests.swift */; };
+		5D9E2EFC266D3CA300AA967E /* Prototype.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D9E2EFB266D3CA300AA967E /* Prototype.storyboard */; };
+		5D9E2F00266D3EFA00AA967E /* PrototypeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9E2EFF266D3EFA00AA967E /* PrototypeTableViewController.swift */; };
+		5D9E2F03266D3FC900AA967E /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9E2F02266D3FC900AA967E /* Author.swift */; };
+		5D9E2F05266D3FE100AA967E /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9E2F04266D3FE100AA967E /* Page.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +65,10 @@
 		5D9A9889262B563200DE9BDC /* PatternsTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PatternsTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D9A988D262B563200DE9BDC /* PatternsTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternsTestUITests.swift; sourceTree = "<group>"; };
 		5D9A988F262B563200DE9BDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D9E2EFB266D3CA300AA967E /* Prototype.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Prototype.storyboard; sourceTree = "<group>"; };
+		5D9E2EFF266D3EFA00AA967E /* PrototypeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrototypeTableViewController.swift; sourceTree = "<group>"; };
+		5D9E2F02266D3FC900AA967E /* Author.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
+		5D9E2F04266D3FE100AA967E /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +101,7 @@
 			children = (
 				5D4B7EDC262B66DE0015E833 /* Singleton */,
 				5D4B7EC5262B601B0015E833 /* AbstractFactory */,
+				5D9E2EF7266D3C0300AA967E /* Prototype */,
 			);
 			path = CreationalPatterns;
 			sourceTree = "<group>";
@@ -142,6 +151,8 @@
 			isa = PBXGroup;
 			children = (
 				5D4B7ED2262B61890015E833 /* EnvirommentData.swift */,
+				5D9E2F02266D3FC900AA967E /* Author.swift */,
+				5D9E2F04266D3FE100AA967E /* Page.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -208,6 +219,23 @@
 				5D9A988F262B563200DE9BDC /* Info.plist */,
 			);
 			path = PatternsTestUITests;
+			sourceTree = "<group>";
+		};
+		5D9E2EF7266D3C0300AA967E /* Prototype */ = {
+			isa = PBXGroup;
+			children = (
+				5D9E2EF8266D3C4200AA967E /* View */,
+			);
+			path = Prototype;
+			sourceTree = "<group>";
+		};
+		5D9E2EF8266D3C4200AA967E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5D9E2EFB266D3CA300AA967E /* Prototype.storyboard */,
+				5D9E2EFF266D3EFA00AA967E /* PrototypeTableViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,6 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D9A9878262B563200DE9BDC /* LaunchScreen.storyboard in Resources */,
+				5D9E2EFC266D3CA300AA967E /* Prototype.storyboard in Resources */,
 				5D4B7EE6262B6A3A0015E833 /* AbstractFactory.storyboard in Resources */,
 				5D9A9875262B563200DE9BDC /* Assets.xcassets in Resources */,
 				5D9A9873262B563100DE9BDC /* Main.storyboard in Resources */,
@@ -345,10 +374,13 @@
 				5D4B7EEC262B6C240015E833 /* AbstractFactoryViewController.swift in Sources */,
 				5D4B7ED8262B64770015E833 /* AppEnviromentFactory.swift in Sources */,
 				5D4B7ED3262B61890015E833 /* EnvirommentData.swift in Sources */,
+				5D9E2F03266D3FC900AA967E /* Author.swift in Sources */,
 				5D9A986C262B563100DE9BDC /* AppDelegate.swift in Sources */,
+				5D9E2F05266D3FE100AA967E /* Page.swift in Sources */,
 				5D4B7EDE262B67240015E833 /* ManagerEnviroment.swift in Sources */,
 				5D9A986E262B563100DE9BDC /* SceneDelegate.swift in Sources */,
 				5D4B7ECD262B61190015E833 /* EnvirommentFactory.swift in Sources */,
+				5D9E2F00266D3EFA00AA967E /* PrototypeTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
